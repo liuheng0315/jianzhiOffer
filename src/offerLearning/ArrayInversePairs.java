@@ -1,7 +1,4 @@
 package offerLearning;
-
-import java.util.Arrays;
-
 public class ArrayInversePairs {
     //逆序对数目count
     int count;
