@@ -17,7 +17,7 @@ public class FindNumsAppearOnce {
         for (int i = 0; i < array.length; i++) {
             result ^= array[i];
         }
-        int index = findOneInReult(result);
+        int index = findOneInResult(result);
         for (int i = 0; i < array.length; i++) {
             if (isBit1(array[i], index)) {
                 num1[0] ^= array[i];
@@ -27,7 +27,7 @@ public class FindNumsAppearOnce {
         }
     }
     //找到二进制result中第一个1出现的位置
-    public int findOneInReult(int result){
+    public int findOneInResult(int result){
         int index=0;
         while (((result & 1) == 0) && index < 32) {
             result=result>>1;
