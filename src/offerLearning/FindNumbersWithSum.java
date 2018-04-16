@@ -8,7 +8,7 @@ public class FindNumbersWithSum {
     public ArrayList<Integer> findNumber(int[] array, int sum) {
         HashMap<Integer, Integer> hashMap = new HashMap<>();
         ArrayList<Integer> list = new ArrayList<>();
-        int min=1000000000;
+        int min=0X7FFFFFFF;
         for (int i = 0; i < array.length; i++) {
             int other = sum - array[i];
             if (hashMap.containsKey(other)) {
