@@ -10,7 +10,6 @@ public class Duplicate {
     //字符串中的字符是否重复
     public boolean duplicate(int numbers[],int length,int [] duplication) {
         if (numbers.length == 0||numbers==null) {
-            duplication[0] = -1;
             return false;
         }
         HashSet<Integer> set = new HashSet<Integer>();
